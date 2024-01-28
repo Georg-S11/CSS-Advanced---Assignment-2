@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#title {
+    text-align: center;
+    color: #141414;
+    background-color: #8d8d8d;
+    font-size: 30px;
+}
+
+#main {
+    background-color: aqua;
+    height: 780px;
+}
+
+#boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-between;
+}
+
+.red-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: slideInLeft 1s ease-in;
+    transition: width 2s;
+}
+
+.blue-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: slideInTop 1s ease-in;
+    transition: width 2s;
+}
+
+.green-box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: slideInBottom 1s ease-in;
+    transition: width 2s;
+}
+
+.yellow-box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation: slideInRight 1s ease-in;
+    transition: width 2s;
+}
+
+.red-box:hover,
+.blue-box:hover,
+.green-box:hover,
+.yellow-box:hover {
+    width: 300px;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    font-size: 60px;
+    font-weight: 550;
+    padding: 20px 40px;
+    color: #fff2ff;
+    text-shadow: 1px 1px black;
+    background-color: #d526df;
+    border: 8px solid #883188;
+    border-radius: 36px;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #141414;
+    background-color: #8d8d8d;
+    height: 56px;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 0;
+}
